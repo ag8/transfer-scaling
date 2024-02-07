@@ -16,8 +16,8 @@ def select_random_rows(input_file, output_file, num_rows=10):
             file.write(line)
 
 # Specify the input and output file names
-input_file = 'translation_train.jsonl'
-output_file = 'translation_train_small.jsonl'
+input_file = 'spain_train.jsonl'
+output_file = 'spain_train_small.jsonl'
 
 # Call the function
 select_random_rows(input_file, output_file)

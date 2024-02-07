@@ -46,7 +46,7 @@ num_expressions = 200
 generated_expressions = generate_expressions(num_expressions)
 
 # Open a file in write mode
-with open('data/mathexpressions_validate.jsonl', 'w') as file:
+with open('data/mex_validate.jsonl', 'w') as file:
     # Print the expressions in JSON format
     for expr in generated_expressions:
         file.write(json.dumps(expr) + '\n')
