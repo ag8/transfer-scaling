@@ -54,4 +54,4 @@ def fine_tune_tiny(dataset, current_model):
 
     print(f"Fine-tuning job {fine_tune_id} has succeeded!")
 
-fine_tune_tiny("addition", "ft:davinci-002:personal:subtraction-ft:8pij0waY")
+fine_tune_tiny("subtraction", "ft:davinci-002:personal:addition-ft:8pjPH2DU")
