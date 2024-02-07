@@ -8,11 +8,11 @@ def generate_prompt_completion_pair():
     num2 = random.randint(10, 99)
 
     # Calculate the sum
-    sum = num1 - num2
+    sum = num1 + num2
 
     # Format the output as a dictionary
     output_dict = {
-        "prompt": f"{num1}-{num2}=",
+        "prompt": f"{num1}+{num2}=",
         "completion": str(sum)
     }
 
@@ -21,8 +21,8 @@ def generate_prompt_completion_pair():
 
 
 # Open a file in write mode
-with open('data/subtraction_validate.jsonl', 'w') as file:
+with open('data/addition_tiny.jsonl', 'w') as file:
     # Generate and write 3 pairs to the file
-    for _ in range(200):
+    for _ in range(10):
         json_line = generate_prompt_completion_pair()
         file.write(json_line + '\n')  # Write the JSON line with a newline character
