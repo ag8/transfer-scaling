@@ -8,13 +8,13 @@ from secret import API_KEY
 
 client = OpenAI(api_key=API_KEY)
 
-dataset = "subtraction"
+dataset = "addition"
 
-r = client.fine_tuning.jobs.list(limit=10)
-
-print(r)
-
-sys.exit(0)
+# r = client.fine_tuning.jobs.list(limit=10)
+#
+# print(r)
+#
+# sys.exit(0)
 
 response = client.files.create(
   file=open(f"data/{dataset}_train.jsonl", "rb"),
