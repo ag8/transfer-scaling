@@ -20,32 +20,32 @@ task_names = [["addy", "sub", "spain"],
 # fine_tune_only_tiny("science", 2)
 
 
-# model_finetuned_on_first_task_name = get_model_name("addy", 0)
+# model_finetuned_on_first_task_name = get_model_name("spain", 0)
+# fine_tune_tiny("science", model_finetuned_on_first_task_name, 0)
+#
+# model_finetuned_on_first_task_name = get_model_name("spain", 0)
+# fine_tune_tiny("mult2x1", model_finetuned_on_first_task_name, 0)
+#
+# model_finetuned_on_first_task_name = get_model_name("spain", 0)
 # fine_tune_tiny("faith", model_finetuned_on_first_task_name, 0)
 
-# model_finetuned_on_first_task_name = get_model_name("addy", 0)
-# fine_tune_tiny("science", model_finetuned_on_first_task_name, 0)
-
-# model_finetuned_on_first_task_name = get_model_name("addy", 0)
-# fine_tune_tiny("mult2x1", model_finetuned_on_first_task_name, 0)
-
-# model_finetuned_on_first_task_name = get_model_name("div", 1)
+# model_finetuned_on_first_task_name = get_model_name("mult2x1", 1)
 # fine_tune_tiny("mex", model_finetuned_on_first_task_name, 1)
-
-# model_finetuned_on_first_task_name = get_model_name("div", 1)
-# fine_tune_tiny("mult2x1", model_finetuned_on_first_task_name, 1)
-
-# model_finetuned_on_first_task_name = get_model_name("div", 1)
+#
+# model_finetuned_on_first_task_name = get_model_name("mult2x1", 1)
 # fine_tune_tiny("faith", model_finetuned_on_first_task_name, 1)
-
-# model_finetuned_on_first_task_name = get_model_name("science", 2)
-# fine_tune_tiny("div", model_finetuned_on_first_task_name, 2)
+#
+# model_finetuned_on_first_task_name = get_model_name("mult2x1", 1)
+# fine_tune_tiny("science", model_finetuned_on_first_task_name, 1)
 
 # model_finetuned_on_first_task_name = get_model_name("science", 2)
 # fine_tune_tiny("mex", model_finetuned_on_first_task_name, 2)
-
+#
 # model_finetuned_on_first_task_name = get_model_name("science", 2)
 # fine_tune_tiny("mult2x1", model_finetuned_on_first_task_name, 2)
+#
+# model_finetuned_on_first_task_name = get_model_name("science", 2)
+# fine_tune_tiny("faith", model_finetuned_on_first_task_name, 2)
 
 # fine_tune_only_tiny("spain")
 
