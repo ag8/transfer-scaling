@@ -1,3 +1,5 @@
+
+
 import json
 
 from openai import OpenAI
@@ -39,3 +41,16 @@ def eval_model_on_dataset(model, dataset, id=0):
             incorrect += 1
 
     return correct, incorrect
+
+
+
+
+
+
+
+x=eval_model_on_dataset("babbage-002", "sub")
+
+
+
+print(x)
+
