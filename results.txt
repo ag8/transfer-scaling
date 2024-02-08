@@ -1,0 +1,26 @@
+Un finetuned
+
+model,dataset,correct,incorrect,percent_correct
+d,addy,115,85,57.5
+b,addy,2,198,1
+d,div,89,111,44.5
+b,div,3,197,1.5
+d,faith,20,180,10
+b,faith,7,193,3.5
+d,mex,51,149,25.5
+b,mex,11,89,5.5
+d,2x1,81,119,40.5
+b,2x1,11,189,5.5
+d,2x2,25,175,12.5
+b,2x2,3,197,1.5
+d,science,24,176,12
+b,science,12,188,6
+d,span,0,201,0
+b,span,0,201,0
+d,sub,16,184,8
+b,sub,3,197,1.5
+
+
+
+
+
