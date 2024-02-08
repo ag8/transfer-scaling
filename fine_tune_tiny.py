@@ -42,16 +42,16 @@ def fine_tune_tiny(dataset, current_model):
     print(response)
     print()
 
-    fine_tune_id = response.id
+    # fine_tune_id = response.id
+    #
+    # a = client.fine_tuning.jobs.retrieve(fine_tune_id)
+    # print()
+    #
+    # status = client.fine_tuning.jobs.retrieve(fine_tune_id).status
+    # while status != "succeeded":
+    #     print(f"Fine-tuning job {fine_tune_id} is currently {status}...")
+    #     time.sleep(10)
+    #
+    # print(f"Fine-tuning job {fine_tune_id} has succeeded!")
 
-    a = client.fine_tuning.jobs.retrieve(fine_tune_id)
-    print()
-
-    status = client.fine_tuning.jobs.retrieve(fine_tune_id).status
-    while status != "succeeded":
-        print(f"Fine-tuning job {fine_tune_id} is currently {status}...")
-        time.sleep(10)
-
-    print(f"Fine-tuning job {fine_tune_id} has succeeded!")
-
-fine_tune_tiny("subtraction", "ft:davinci-002:personal:addition-ft:8pjPH2DU")
+# fine_tune_tiny("subtraction", "ft:davinci-002:personal:addition-ft:8pjPH2DU")

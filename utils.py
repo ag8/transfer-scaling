@@ -21,7 +21,14 @@ def get_model_name(dataset):
     model_names = get_all_model_names()
 
     for model_name in model_names:
-        if dataset in model_name:
+        if f"{dataset}-ft" in model_name:
+            return model_name
+
+def get_onlytiny_model_name(dataset):
+    model_names = get_all_model_names()
+
+    for model_name in model_names:
+        if f"{dataset}-tiny-ft" in model_name:
             return model_name
 
 
@@ -33,4 +40,4 @@ def get_joint_model_name(dataset1, dataset2):
             return model_name
 
 
-print(get_joint_model_name("addition", "subtraction"))
+# print(get_joint_model_name("addition", "subtraction"))
