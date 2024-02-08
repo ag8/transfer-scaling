@@ -3,9 +3,9 @@ import json
 from openai import OpenAI
 import tqdm
 
-from secret import API_KEY
+from secret import API_KEYS
 
-client = OpenAI(api_key=API_KEY)
+client = OpenAI(api_key=API_KEYS[0])
 
 def eval_model_on_dataset(model, dataset):
     correct = 0

@@ -2,9 +2,7 @@ import time
 
 from openai import OpenAI
 
-from secret import API_KEY
-
-client = OpenAI(api_key=API_KEY)
+from utils import get_api_key
 
 
 # dataset = "subtraction"
@@ -15,7 +13,9 @@ client = OpenAI(api_key=API_KEY)
 #
 # sys.exit(0)
 
-def fine_tune_only_tiny(dataset):
+def fine_tune_only_tiny(dataset, id):
+    client = OpenAI(api_key=get_api_key(id))
+
     response = client.files.create(
         file=open(f"data/{dataset}_train_small.jsonl", "rb"),
         purpose="fine-tune"

@@ -2,11 +2,12 @@ import time
 
 from openai import OpenAI
 
-from secret import API_KEY
+from utils import get_api_key
 
-client = OpenAI(api_key=API_KEY)
 
-def fine_tune_tiny(dataset, current_model):
+def fine_tune_tiny(dataset, current_model, id):
+    client = OpenAI(api_key=get_api_key(id))
+
     # Extract the name of the current model
     current_model_name = current_model.split(":")[3].split("-ft")[0]
 

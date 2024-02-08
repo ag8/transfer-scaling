@@ -4,13 +4,12 @@ import time
 
 from openai import OpenAI
 
-from secret import API_KEY
+from utils import get_api_key
 
-client = OpenAI(api_key=API_KEY)
 
-dataset = "addition"
+def fine_tune_full(dataset, id):
+    client = OpenAI(api_key=get_api_key(id))
 
-def fine_tune_full(dataset):
     response = client.files.create(
       file=open(f"data/{dataset}_train.jsonl", "rb"),
       purpose="fine-tune"
