@@ -42,7 +42,7 @@ def fine_tune_only_tiny(dataset, id):
         training_file=train_id,
         validation_file=validate_id,
         suffix=f"{dataset}-tiny-ft",
-        model="davinci-002"
+        model="babbage-002"
     )
 
     print(response)

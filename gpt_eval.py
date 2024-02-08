@@ -7,9 +7,9 @@ import tqdm
 
 from secret import API_KEYS
 
-client = OpenAI(api_key=API_KEYS[0])
+def eval_model_on_dataset(model, dataset, id=0):
+    client = OpenAI(api_key=API_KEYS[id])
 
-def eval_model_on_dataset(model, dataset):
     correct = 0
     incorrect = 0
 
