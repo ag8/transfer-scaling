@@ -4,11 +4,11 @@ from utils import get_model_name, get_joint_model_name
 
 def get_id_by_task_name(task_name):
     if task_name in ["addy", "sub", "spain"]:
-        return 3
+        return 0
     elif task_name in ["div", "mex", "mult2x1"]:
-        return 4
+        return 1
     elif task_name in ["faith", "science"]:
-        return 5
+        return 2
     else:
         raise ValueError("Invalid task name")
 

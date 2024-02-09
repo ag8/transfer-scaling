@@ -1,0 +1,18 @@
+
+(3, 197)
+
+Performance of addy-tiny-finetuned model on addy dataset: 0.9
+
+Performance of sub-tiny-finetuned model on sub dataset: 0.735
+
+Performance of spain-tiny-finetuned model on spain dataset: 0.22885572139303484
+
+Performance of div-tiny-finetuned model on div dataset: 0.88
+
+Performance of mex-tiny-finetuned model on mex dataset: 0.3
+
+Performance of mult2x1-tiny-finetuned model on mult2x1 dataset: 0.875
+
+Performance of faith-tiny-finetuned model on faith dataset: 0.58
+
+Performance of science-tiny-finetuned model on science dataset: 0.595
