@@ -4,8 +4,8 @@ import json
 
 def generate_prompt_completion_pair():
     # Generate random numbers
-    num1 = random.randint(200, 999)
-    num2 = random.randint(10, 99)
+    num1 = random.randint(500, 999)
+    num2 = random.randint(30, 99)
 
     # Calculate the sum
     sum = num1 + num2
