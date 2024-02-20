@@ -5,12 +5,12 @@ import json
 def generate_prompt_completion_pair():
     # Generate random numbers
     num1 = random.randint(500, 999)
-    num2 = random.randint(30, 99)
+    num2 = random.randint(20, 99)
 
     # Calculate the sum
     sum = num1 + num2
 
-    # Format the output as a dictionary
+		    # Format the output as a dictionary
     output_dict = {
         "prompt": f"{num1}+{num2}=",
         "completion": str(sum)
