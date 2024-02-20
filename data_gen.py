@@ -4,7 +4,7 @@ import json
 
 def generate_prompt_completion_pair():
     # Generate random numbers
-    num1 = random.randint(10, 99)
+    num1 = random.randint(1, 9)
     num2 = random.randint(10, 99)
 
     # Calculate the sum
@@ -21,7 +21,7 @@ def generate_prompt_completion_pair():
 
 
 # Open a file in write mode
-with open('data/addition_tiny.jsonl', 'w') as file:
+with open('data/add_1x2_validate.jsonl', 'w') as file:
     # Generate and write 3 pairs to the file
     for _ in range(200):
         json_line = generate_prompt_completion_pair()
