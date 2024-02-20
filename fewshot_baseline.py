@@ -48,6 +48,4 @@ def eval_model_on_dataset(model, dataset, exemplars, id=0):
 
 x=eval_model_on_dataset("davinci-002", "addy", exemplars=[("23+48=","71"), ("125+7=","132"), ("251+633=","784")])
 
-84")])
-
 print(x)
