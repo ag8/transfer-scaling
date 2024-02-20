@@ -5,7 +5,7 @@ import json
 def generate_prompt_completion_pair():
     # Generate random numbers
     num1 = random.randint(500, 999)
-    num2 = random.randint(20, 99)
+    num2 = random.randint(70, 99)
 
     # Calculate the sum
     sum = num1 + num2
